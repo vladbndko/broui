@@ -1,0 +1,50 @@
+{
+  "name": "broui",
+  "version": "0.0.1",
+  "type": "module",
+  "keywords": [
+    "components",
+    "ui",
+    "vue3",
+    "vue",
+    "vuejs"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/broui.cjs",
+  "module": "./dist/broui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/broui.js",
+      "require": "./dist/broui.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.13.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "prettier": "3.3.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12",
+    "vite-plugin-dts": "^3.9.1",
+    "vue": "^3.4.27",
+    "vue-tsc": "^2.0.19"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.2.3"
+  }
+}
