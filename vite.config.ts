@@ -8,20 +8,22 @@ export default defineConfig({
   plugins: [vue(), dts()],
   build: {
     copyPublicDir: false,
+    cssCodeSplit: true,
     lib: {
       name: 'broui',
-      fileName: 'broui',
-      entry: resolve(__dirname, 'src/index.ts'),
+      fileName: 'index',
+      entry: {
+        index: resolve(__dirname, 'src/index.ts'),
+        style: resolve(__dirname, 'src/style.css'),
+      },
     },
     rollupOptions: {
       treeshake: true,
       external: ['vue'],
       output: {
-        exports: 'named',
-        globals: { vue: 'Vue' },
-      },
-      input: {
-        main: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
+        globals: {
+          vue: 'Vue',
+        },
       },
     },
   },
@@ -29,5 +31,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
+  },
+  // @ts-ignore
+  test: {
+    globals: true,
+    environment: 'happy-dom',
   },
 });

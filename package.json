@@ -1,6 +1,10 @@
 {
-  "name": "broui",
-  "version": "0.0.1",
+  "name": "@vladbndko/broui",
+  "version": "0.0.0",
+  "description": "Vue 3 components",
+  "author": "Vladyslav Bondarenko <vladbndko@gmail.com>",
+  "license": "MIT",
+  "repository": "vladbndko/broui",
   "type": "module",
   "keywords": [
     "components",
@@ -12,31 +16,35 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/broui.cjs",
-  "module": "./dist/broui.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/broui.js",
-      "require": "./dist/broui.umd.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
-    }
+    "./dist/style.css": "./dist/style.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "@tabler/icons-vue": "^3.5.0",
+    "@testing-library/vue": "^8.1.0",
     "@types/node": "^20.13.0",
     "@vitejs/plugin-vue": "^5.0.5",
+    "clsx": "^2.1.1",
+    "happy-dom": "^14.12.0",
     "prettier": "3.3.0",
     "typescript": "^5.4.5",
     "vite": "^5.2.12",
     "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0",
     "vue": "^3.4.27",
     "vue-tsc": "^2.0.19"
   },
@@ -46,5 +54,8 @@
   "engines": {
     "node": ">=20.10.0",
     "npm": ">=10.2.3"
-  }
+  },
+  "sideEffects": [
+    "**/*.css"
+  ]
 }

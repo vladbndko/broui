@@ -1,3 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { BroButton } from '@/index';
+</script>
 
-<template></template>
+<template>
+  <BroButton>Click</BroButton>
+</template>
