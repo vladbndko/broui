@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BroButton } from '@/index';
+import BroButton from '@/components/button/BroButton.vue';
 </script>
 
 <template>

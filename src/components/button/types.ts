@@ -1,6 +1,6 @@
 export type ButtonSize = 'small' | 'medium' | 'large';
 
-export type ButtonVariant = 'default' | 'primary' | 'success' | 'warning' | 'error';
+export type ButtonVariant = 'default' | 'info' | 'success' | 'warning' | 'error';
 
 export type ButtonProps = {
   variant?: ButtonVariant;

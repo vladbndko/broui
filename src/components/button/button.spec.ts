@@ -1,5 +1,6 @@
+import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
-import BroButton from '@/components/button/Button.vue';
+import BroButton from './BroButton.vue';
 
 describe('BroButton', () => {
   it('Has default structure and classes', async () => {

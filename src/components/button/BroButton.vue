@@ -1,15 +1,13 @@
 <script lang="ts" setup>
 import { clsx } from 'clsx';
 import { computed } from 'vue';
-import useUtils from '@/composables/useUtils';
-import { ButtonProps } from '@/components/button/types';
+
+import type { ButtonProps } from './types';
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: 'default',
   size: 'medium',
 });
-
-const { isHexColor } = useUtils();
 
 const classes = computed(() =>
   clsx({
@@ -25,5 +23,7 @@ const classes = computed(() =>
 <template>
   <button :class="classes">
     <slot />
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque cum, cumque dolor eligendi est hic, in ipsam
+    itaque iure maiores odio reprehenderit vel veniam vero. Neque provident qui saepe.
   </button>
 </template>

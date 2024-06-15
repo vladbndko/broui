@@ -1,1 +1,1 @@
-export { default as BroButton } from '@/components/button/Button.vue';
+export { default as BroButton } from './components/button/BroButton.vue';
