@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
-import App from '@/App.vue';
-import '@/style.scss';
+import App from './App.vue';
+import './BroVue/styles/main.scss';
+import { createBroVue } from './BroVue';
 
-createApp(App).mount('#app');
+createApp(App).use(createBroVue()).mount('#app');

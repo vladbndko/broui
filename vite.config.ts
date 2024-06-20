@@ -10,15 +10,14 @@ export default defineConfig({
     copyPublicDir: false,
     cssCodeSplit: true,
     lib: {
-      name: 'broui',
-      fileName: 'index',
+      name: 'BroVue',
+      fileName: 'brovue',
       entry: {
-        index: resolve(__dirname, 'src/index.ts'),
-        style: resolve(__dirname, 'src/style.scss'),
+        index: resolve(__dirname, 'src/BroVue/index.ts'),
+        style: resolve(__dirname, 'src/BroVue/styles/main.scss'),
       },
     },
     rollupOptions: {
-      treeshake: true,
       external: ['vue'],
       output: {
         globals: {

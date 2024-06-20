@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+:root {
+  --bro-gray-50-hex: #fafaf9;
+  --bro-gray-50-rgb: 250, 250, 249;
+  --bro-gray-100-hex: #f5f5f4;
+  --bro-gray-100-rgb: 245, 245, 244;
+  --bro-gray-200-hex: #e7e5e4;
+  --bro-gray-200-rgb: 231, 229, 228;
+  --bro-gray-300-hex: #d6d3d1;
+  --bro-gray-300-rgb: 214, 211, 209;
+  --bro-gray-400-hex: #a8a29e;
+  --bro-gray-400-rgb: 168, 162, 158;
+  --bro-gray-500-hex: #78716c;
+  --bro-gray-500-rgb: 120, 113, 108;
+  --bro-gray-600-hex: #57534e;
+  --bro-gray-600-rgb: 87, 83, 78;
+  --bro-gray-700-hex: #44403c;
+  --bro-gray-700-rgb: 68, 64, 60;
+  --bro-gray-800-hex: #292524;
+  --bro-gray-800-rgb: 41, 37, 36;
+  --bro-gray-900-hex: #1c1917;
+  --bro-gray-900-rgb: 28, 25, 23;
+  --bro-gray-950-hex: #0c0a09;
+  --bro-gray-950-rgb: 12, 10, 9;
+  --bro-info-50-hex: #eef2ff;
+  --bro-info-50-rgb: 238, 242, 255;
+  --bro-info-100-hex: #e0e7ff;
+  --bro-info-100-rgb: 224, 231, 255;
+  --bro-info-200-hex: #c7d2fe;
+  --bro-info-200-rgb: 199, 210, 254;
+  --bro-info-300-hex: #a5b4fc;
+  --bro-info-300-rgb: 165, 180, 252;
+  --bro-info-400-hex: #818cf8;
+  --bro-info-400-rgb: 129, 140, 248;
+  --bro-info-500-hex: #6366f1;
+  --bro-info-500-rgb: 99, 102, 241;
+  --bro-info-600-hex: #4f46e5;
+  --bro-info-600-rgb: 79, 70, 229;
+  --bro-info-700-hex: #4338ca;
+  --bro-info-700-rgb: 67, 56, 202;
+  --bro-info-800-hex: #3730a3;
+  --bro-info-800-rgb: 55, 48, 163;
+  --bro-info-900-hex: #312e81;
+  --bro-info-900-rgb: 49, 46, 129;
+  --bro-info-950-hex: #1e1b4b;
+  --bro-info-950-rgb: 30, 27, 75;
+  --bro-success-50-hex: #f0fdf4;
+  --bro-success-50-rgb: 240, 253, 244;
+  --bro-success-100-hex: #dcfce7;
+  --bro-success-100-rgb: 220, 252, 231;
+  --bro-success-200-hex: #bbf7d0;
+  --bro-success-200-rgb: 187, 247, 208;
+  --bro-success-300-hex: #86efac;
+  --bro-success-300-rgb: 134, 239, 172;
+  --bro-success-400-hex: #4ade80;
+  --bro-success-400-rgb: 74, 222, 128;
+  --bro-success-500-hex: #22c55e;
+  --bro-success-500-rgb: 34, 197, 94;
+  --bro-success-600-hex: #16a34a;
+  --bro-success-600-rgb: 22, 163, 74;
+  --bro-success-700-hex: #15803d;
+  --bro-success-700-rgb: 21, 128, 61;
+  --bro-success-800-hex: #166534;
+  --bro-success-800-rgb: 22, 101, 52;
+  --bro-success-900-hex: #14532d;
+  --bro-success-900-rgb: 20, 83, 45;
+  --bro-success-950-hex: #052e16;
+  --bro-success-950-rgb: 5, 46, 22;
+  --bro-warning-50-hex: #fff7ed;
+  --bro-warning-50-rgb: 255, 247, 237;
+  --bro-warning-100-hex: #ffedd5;
+  --bro-warning-100-rgb: 255, 237, 213;
+  --bro-warning-200-hex: #fed7aa;
+  --bro-warning-200-rgb: 254, 215, 170;
+  --bro-warning-300-hex: #fdba74;
+  --bro-warning-300-rgb: 253, 186, 116;
+  --bro-warning-400-hex: #fb923c;
+  --bro-warning-400-rgb: 251, 146, 60;
+  --bro-warning-500-hex: #f97316;
+  --bro-warning-500-rgb: 249, 115, 22;
+  --bro-warning-600-hex: #ea580c;
+  --bro-warning-600-rgb: 234, 88, 12;
+  --bro-warning-700-hex: #c2410c;
+  --bro-warning-700-rgb: 194, 65, 12;
+  --bro-warning-800-hex: #9a3412;
+  --bro-warning-800-rgb: 154, 52, 18;
+  --bro-warning-900-hex: #7c2d12;
+  --bro-warning-900-rgb: 124, 45, 18;
+  --bro-warning-950-hex: #431407;
+  --bro-warning-950-rgb: 67, 20, 7;
+  --bro-error-50-hex: #fef2f2;
+  --bro-error-50-rgb: 254, 242, 242;
+  --bro-error-100-hex: #fee2e2;
+  --bro-error-100-rgb: 254, 226, 226;
+  --bro-error-200-hex: #fecaca;
+  --bro-error-200-rgb: 254, 202, 202;
+  --bro-error-300-hex: #fca5a5;
+  --bro-error-300-rgb: 252, 165, 165;
+  --bro-error-400-hex: #f87171;
+  --bro-error-400-rgb: 248, 113, 113;
+  --bro-error-500-hex: #ef4444;
+  --bro-error-500-rgb: 239, 68, 68;
+  --bro-error-600-hex: #dc2626;
+  --bro-error-600-rgb: 220, 38, 38;
+  --bro-error-700-hex: #b91c1c;
+  --bro-error-700-rgb: 185, 28, 28;
+  --bro-error-800-hex: #991b1b;
+  --bro-error-800-rgb: 153, 27, 27;
+  --bro-error-900-hex: #7f1d1d;
+  --bro-error-900-rgb: 127, 29, 29;
+  --bro-error-950-hex: #450a0a;
+  --bro-error-950-rgb: 69, 10, 10;
+
+  --bro-font-sans-serif: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji';
+  --bro-font-monospace: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+
+  --bro-border-radius: 4px;
+  --bro-focus-shadow: 0 0 0 0.15em;
+  --bro-transition: 0.15s ease-in-out;
+
+  /* Font sizes */
+  --bro-text-xs: 0.75rem;
+  --bro-text-sm: 0.875rem;
+  --bro-text-md: 1rem;
+  --bro-text-lg: 1.125rem;
+  --bro-text-xl: 1.25rem;
+  --bro-text-2xl: 1.5rem;
+  --bro-text-3xl: 1.875rem;
+  --bro-text-4xl: 2.25rem;
+  --bro-text-5xl: 3rem;
+  --bro-text-6xl: 3.75rem;
+  --bro-text-7xl: 4.5rem;
+  --bro-text-8xl: 6rem;
+  --bro-text-9xl: 8rem;
+
+  /* Buttons */
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--bro-font-sans-serif);
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--bro-font-monospace);
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+html {
+  font-family: var(--bro-sans-serif-font);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+@import '../components/button/button';
+@import '../components/button-group/button-group';

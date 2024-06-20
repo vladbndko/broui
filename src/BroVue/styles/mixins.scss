@@ -1,0 +1,5 @@
+@mixin prefers-reduced-motion($preference: reduce) {
+  @media (prefers-reduced-motion: #{$preference}) {
+    @content;
+  }
+}
